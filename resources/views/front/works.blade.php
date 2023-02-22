@@ -17,12 +17,12 @@
                 @foreach($works as $work)
                     <div class="col-lg-6 ">
                         <div class="features__area-item features__area-item-hover">
-                            <img src="{{$work->image}}" alt="">
+                            <img src="{{$work->image}}" alt="Work Image" style="width: 545px;height: 636px">
                             <div class="features__area-item-content">
                                 <div class="features__area-item-content-icon">
                                     <a href="{{route('front.works.show',$work->id)}}"><i class="fal fa-plus"></i></a>
                                 </div>
-                                <h3><a href="{{route('front.works.show',$work->id)}}">{{$work->title_en}}</a></h3>
+                                <h3><a href="{{route('front.works.show',$work->id)}}">{{$work->title}}</a></h3>
                             </div>
                         </div>
                     </div>

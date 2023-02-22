@@ -54,9 +54,7 @@ class GeneralSettingSeeder extends Seeder
             ['key' => 'website_name_en', 'value' => 'Nebras Film'],
             ['key' => 'contact_number', 'value' => '123458896895'],
             ['key' => 'copyright', 'value' => '<p><strong>Copyright </strong>&amp; 2023 <a href="https://badee.com.sa/" target="_blank"><strong><em><u>Badee </u></em></strong></a>Website By Nebras Films</p>'],
-            ['key' => 'website_name_ar', 'value' => 'نبراس فيلم'],
-            ['key' => 'website_name_ar', 'value' => 'نبراس فيلم'],
-            ['key' => 'website_name_ar', 'value' => 'نبراس فيلم'],
+
         ];
         GeneralSetting::insert($settings);
     }

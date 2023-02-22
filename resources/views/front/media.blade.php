@@ -16,7 +16,7 @@
                   @foreach($mediacenters as $media)
                     <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item mb-30">
                         <a class="portfolio__area-two-item" href="{{asset($media->image)}}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
-                            <img class="img__full" src="{{asset($media->image)}}" alt="">
+                            <img class="img__full" src="{{asset($media->image)}}" alt="" style="height: 416px">
                             <div class="portfolio__area-two-item-content">
                                 <h4>{{$media->name}}</h4>
                             </div>
@@ -26,7 +26,7 @@
                    @foreach($mediamore as  $media)
                     <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item mb-30 media-more">
                          <a class="portfolio__area-two-item" href="{{asset($media->image)}}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
-                           <img class="img__full" src="{{asset($media->image)}}" alt="">
+                           <img class="img__full" src="{{asset($media->image)}}" alt="" style="height: 416px">
                             <div class="portfolio__area-two-item-content">
                                 <h4>{{$media->name}}</h4>
                             </div>

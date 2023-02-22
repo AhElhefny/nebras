@@ -26,7 +26,7 @@ class Service extends Model
 
     public function getImage2Attribute($value){
 
-        return asset('dashboardAssets/images/'.$this->folder.'/'.$value);
+        return $value?asset('dashboardAssets/images/'.$this->folder.'/'.$value):null;
     }
 
 }

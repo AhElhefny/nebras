@@ -18,12 +18,15 @@
                                         <img class="img__full" src="{{asset($service->image)}}" alt="">
                                     </a>
                                 </div>
-                                <div class="col-sm-6 sm-mb-30">
-                                    <a class="portfolio__area-two-item" href="{{asset($service->image2)}}"
-                                       title="Medical Scanner 04" data-subtitle="Medical Scanner">
-                                        <img class="img__full" src="{{asset($service->image2)}}" alt="">
-                                    </a>
-                                </div>
+
+                                @if(isset($service->image2))
+                                    <div class="col-sm-6 sm-mb-30">
+                                        <a class="portfolio__area-two-item" href="{{asset($service->image2)}}"
+                                           title="Medical Scanner 04" data-subtitle="Medical Scanner">
+                                            <img class="img__full" src="{{asset($service->image2)}}" style="width:416px; height: 416px " alt="">
+                                        </a>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                         <div class="services__details-left-feedback">
@@ -33,7 +36,7 @@
                                     <div class="col-xl-6 lg-mb-30 mb-2">
                                         <div class="feedback__area-item">
                                             <div class="feedback__area-item-quote">
-                                                <img src="{{asset('frontAssets/images/quote.png')}}" alt="">
+                                                <img src="{{asset('frontAssets/images/quote.png')}}"  alt="">
                                             </div>
                                             <div class="feedback__area-item-reviews">
                                                 <h5>{{$review->reviews >=3?'Good':'Bad'}} :</h5>

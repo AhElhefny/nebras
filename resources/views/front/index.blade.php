@@ -179,7 +179,7 @@
                                 </div>
                             </div>
                             <div class="team__area-item-content">
-                                <h5><a href="">{{$team->name}}</a></h5>
+                                <h5><a href="{{route('front.team.show',$team->id)}}">{{$team->name}}</a></h5>
                                 <span>{{$team->job}}</span>
                             </div>
                         </div>
@@ -267,7 +267,7 @@
                      @foreach($works as $work)
                         <div class="col-lg-6 ">
                             <div class="features__area-item features__area-item-hover">
-                                <img src="{{$work->image}}" alt="">
+                                <img src="{{$work->image}}" alt="" style="width: 545px;height: 636px">
                                 <div class="features__area-item-content">
                                     <div class="features__area-item-content-icon">
                                         <a href="{{route('front.works.show',$work->id)}}"><i class="fal fa-plus"></i></a>
@@ -307,7 +307,7 @@
                     @foreach($mediacenters as $media)
                     <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item mb-30">
                         <a class="portfolio__area-two-item" href="{{asset($media->image)}}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
-                            <img class="img__full" src="{{asset($media->image)}}" alt="">
+                            <img class="img__full" src="{{asset($media->image)}}" alt="" style="height: 416px">
                             <div class="portfolio__area-two-item-content">
                                 <h4>{{$media->name}}</h4>
                             </div>
@@ -318,7 +318,7 @@
                     @foreach($mediamore as  $media)
                     <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item mb-30 media-more">
                         <a class="portfolio__area-two-item" href="{{asset($media->image)}}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
-                           <img class="img__full" src="{{asset($media->image)}}" alt="">
+                           <img class="img__full" src="{{asset($media->image)}}" alt="" style="height: 416px">
                             <div class="portfolio__area-two-item-content">
                                 <h4>{{$media->name}}</h4>
                             </div>

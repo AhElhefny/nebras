@@ -7,7 +7,7 @@
                         @if($index < 2)
                         <div class="col-xl-6 col-md-6 mb-30 portfolio-item">
                             <a class="portfolio__area-two-item" href="{{$work->image}}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
-                                <img class="img__full" src="{{$work->image}}" alt="">
+                                <img class="img__full" src="{{$work->image}}" alt="" style="width: 545px;height: 636px">
                                 <div class="portfolio__area-two-item-content">
                                     <h4>{{$work->title_en}}</h4>
                                 </div>
@@ -16,7 +16,7 @@
                         @else
                             <div class="col-xl-4 col-lg-4 col-md-6 portfolio-item mb-30">
                                 <a class="portfolio__area-two-item" href="{{$work->image}}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
-                                    <img class="img__full" src="{{$work->image}}" alt="">
+                                    <img class="img__full" src="{{$work->image}}" alt="" style="height: 416px">
                                     <div class="portfolio__area-two-item-content">
                                         <h4>{{$work->title_en}}</h4>
                                     </div>
@@ -51,7 +51,7 @@
                                     if(i < 2){
                                         $('#all-works').append(`<div class="col-xl-6 col-md-6 mb-30 portfolio-item">
                                         <a class="portfolio__area-two-item" href="${response[i].image}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
-                                        <img class="img__full" src="${response[i].image}" alt="">
+                                        <img class="img__full" src="${response[i].image}" alt="" style="width: 545px;height: 636px">
                                         <div class="portfolio__area-two-item-content">
                                         <h4>${response[i].title_en}</h4>
                                         </div>
@@ -60,7 +60,7 @@
                                     }else {
                                         $('#all-works').append(`<div class="col-xl-4 col-lg-4 col-md-6 portfolio-item mb-30">
                                         <a class="portfolio__area-two-item" href="${response[i].image}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
-                                        <img class="img__full" src="${response[i].image}" alt="">
+                                        <img class="img__full" src="${response[i].image}" alt="" style="height: 416px">
                                         <div class="portfolio__area-two-item-content">
                                         <h4>${response[i].title_en}</h4>
                                         </div>

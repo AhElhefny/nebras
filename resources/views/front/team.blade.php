@@ -27,7 +27,7 @@
                                 </div>
                             </div>
                             <div class="team__area-item-content">
-                                <h5><a href="{{url('team-details/'.$team->id)}}">{{$team->name}}</a></h5>
+                                <h5><a href="{{route('front.team.show',$team->id)}}">{{$team->name}}</a></h5>
                                 <span>{{$team->job}}</span>
                             </div>
                         </div>
