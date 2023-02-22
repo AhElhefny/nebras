@@ -26,7 +26,7 @@
                                                 <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                                                     <li class="mb-2"><a href="#general-settings"><i class="feather icon-home"></i><span class="menu-title" data-i18n="Dashboard">{{__('dashboard.general settings')}}</span></a>
                                                     </li>
-                                                    <li class="mb-2"><a href="#navbar"><i class="feather icon-navigation"></i><span class="menu-title" data-i18n="Dashboard">{{__('dashboard.navbar')}}</span></a>
+                                                    {{-- <li class="mb-2"><a href="#navbar"><i class="feather icon-navigation"></i><span class="menu-title" data-i18n="Dashboard">{{__('dashboard.navbar')}}</span></a> --}}
                                                     </li>
                                                     <li class="mb-2"><a href="#titles"><i class="feather icon-tablet"></i><span class="menu-title" data-i18n="Dashboard">{{__('dashboard.sections titles')}}</span></a>
                                                     </li>
@@ -40,7 +40,7 @@
                             </div>
                             <div class="col-10" >
                                 <x-dashboard.generalSettings.websiteSettings />
-                                <x-dashboard.generalSettings.navbarSettings />
+                                {{-- <x-dashboard.generalSettings.navbarSettings /> --}}
                                 <x-dashboard.generalSettings.titlesSettings />
                                 <x-dashboard.generalSettings.backgroundsSettings />
                             </div>
