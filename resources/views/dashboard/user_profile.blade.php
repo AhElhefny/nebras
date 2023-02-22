@@ -17,7 +17,6 @@
 
                 <div class="nav nav-pills  mb-4 ml-5 d-inline-flex">
                     <a class="nav-item nav-link active mr-2" style="font-size: large" data-toggle="tab" id="personal-link" href="#personal"><i class="feather icon-user me-1">  {{__('dashboard.personal information')}}</i></a>
-                    <a class="nav-item nav-link" style="font-size: large" data-toggle="tab" id="bank-link" href="#bank-account"><i class="feather icon-credit-card">  {{__('dashboard.bank-account')}}</i></a>
                 </div>
             </div>
 
@@ -175,124 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane " id="bank-account" aria-labelledby="profile-tab-end" aria-expanded="false" >
-                    <div class="row">
-                        <div class="col-4 mt-3">
-                            <div class="card">
-                                <div class="card-header mb-2">
-                                    <h4 class="card-title">{{__('dashboard.bank-account')}}</h4>
-                                </div>
-                            </div>
-                            @foreach($user->bank_accounts as $account)
-                                <div class="card">
-                                    <div class="card-content">
-                                        <span class="float-right mt-1 mr-1">
-                                            <form action="{{route('admin.users.bank_profile.destroy',$account->id)}}" method="POST" class="role-{{$account->id}}">
-                                            @csrf
-                                                @method('DELETE')
-                                            <a onClick="remove({{$account->id}},'role')"><i class="feather icon-trash-2"></i></a>
-                                            </form>
-                                        </span>
-                                        <i class="feather icon-edit float-right mr-1 pop-up-edit" style="margin-top: 17px" data-id="{{$account->id}}" data-toggle="modal" data-target="#inlineForm"></i>
-                                        <div class="card-body w-auto">
-                                            <div class="d-inline-block float-left">
-                                                <h6 class="mb-2">{{__('dashboard.bank-name')}} :</h6>
-                                                <h6 class="mb-2">{{__('dashboard.IBAN')}} :</h6>
-                                                <h6 class="mb-1"> {{__('dashboard.bank account')}} :</h6>
-                                                <h6 class="mb-2">{{__('dashboard.name on card')}} :</h6>
-                                            </div>
-                                            <div class="d-inline-block float-right">
-                                                <p>{{$account->bank_name}}</p>
-                                                <p>{{$account->name_on_card}}</p>
-                                                <p>{{$account->IBAN}}</p>
-                                                <p>{{$account->account_number}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                        <div class="col-7 mt-3">
-                            <div class="card">
-                                <div class="card-header justify-content-center">
-                                    <h4 class="card-title">{{__('dashboard.add bank-account')}}</h4>
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <form class="form form-vertical" method="POST" action="{{route('admin.users.bank_profile.store')}}" enctype="multipart/form-data">
-                                            @csrf
-                                            <div class="form-body">
-                                                <div class="row justify-content-center">
-                                                    <div class="col-9 mb-2">
-                                                        <div class="form-group">
-                                                            <label for="first-name-icon">{{__('dashboard.bank-name')}}</label>
-                                                            <div class="position-relative has-icon-left">
-                                                                <input type="text" id="first-name-icon" class="form-control" name="bank_name" placeholder="{{__('dashboard.bank-name')}}">
-                                                                <div class="form-control-position">
-                                                                    <i class="feather icon-grid"></i>
-                                                                </div>
-                                                            </div>
-                                                            @error('bank_name')
-                                                            <span class="text text-danger">{{$message}}</span>
-                                                            @enderror
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-9 mb-2">
-                                                        <div class="form-group">
-                                                            <label for="first-name-icon">{{__('dashboard.bank account')}}</label>
-                                                            <div class="position-relative has-icon-left">
-                                                                <input type="number" id="first-name-icon" class="form-control" name="account_number" placeholder="{{__('dashboard.bank account')}}"
-                                                                       pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==16) return false;" min="1111111111111111">
-                                                                <div class="form-control-position">
-                                                                    <i class="feather icon-grid"></i>
-                                                                </div>
-                                                            </div>
-                                                            @error('account_number')
-                                                            <span class="text text-danger">{{$message}}</span>
-                                                            @enderror
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-9 mb-2">
-                                                        <div class="form-group">
-                                                            <label for="contact-info-icon">{{__('dashboard.name on card')}}</label>
-                                                            <div class="position-relative has-icon-left">
-                                                                <input type="text" id="contact-info-icon" class="form-control" name="name_on_card" placeholder="{{__('dashboard.name on card')}}"/>
-                                                                <div class="form-control-position">
-                                                                    <i class="fa fa-pencil"></i>
-                                                                </div>
-                                                            </div>
-                                                            @error('name_on_card')
-                                                            <span class="text text-danger">{{$message}}</span>
-                                                            @enderror
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-9 mb-2">
-                                                        <div class="form-group">
-                                                            <label for="password-icon">{{__('dashboard.IBAN')}}</label>
-                                                            <div class="position-relative has-icon-left">
-                                                                <input type="number" id="password-icon" class="form-control" name="IBAN" placeholder="{{__('dashboard.IBAN')}}"
-                                                                       pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==29) return false;" min="11111111111111111111111111111">
-                                                                <div class="form-control-position">
-                                                                    <i class="fa fa-pencil"></i>
-                                                                </div>
-                                                            </div>
-                                                            @error('IBAN')
-                                                            <span class="text text-danger">{{$message}}</span>
-                                                            @enderror
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <button type="submit" class="btn btn-primary mr-1 mb-1">{{__('dashboard.submit')}}</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

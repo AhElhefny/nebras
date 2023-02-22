@@ -15,7 +15,6 @@
                                 <a class="dropdown-item" href="{{ LaravelLocalization::getLocalizedURL('ar') }}" data-language="fr"><i class="flag-icon flag-icon-eg"></i> العربية</a>
                             </div>
                         </li>
-                        <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.html" data-toggle="tooltip" data-placement="top" title="{{__('dashboard.chat')}}"><i class="ficon feather icon-message-square"></i></a></li>
                     </ul>
 
                 </div>

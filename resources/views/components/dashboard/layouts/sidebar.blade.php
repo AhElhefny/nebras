@@ -4,7 +4,7 @@
         <ul class="nav navbar-nav flex-row">
                <li class="nav-item mr-auto"><a class="navbar-brand" href="{{route('admin.home')}}">
                      <div class="">
-                          <img style="width: 40px; {{app()->getLocale()=='ar'?'transform: scaleX(-1);':''}}" src="{{asset('dashboardAssets/app-assets/images/logo/R-LOGO.png')}}">
+                          <img style="width: 40px; {{app()->getLocale()=='ar'?'transform: scaleX(-1);':''}}" src="{{asset('dashboardAssets/app-assets/images/logo/N-LOGO.png')}}">
                      </div>
                       <h2 class="brand-text mb-0">{{app()->getLocale()=='ar'?'نبراس':'Nebras'}}</h2>
                  </a></li>
@@ -99,7 +99,7 @@
                  </ul>
              </li>
 
-             
+
 {{--            <li class=" nav-item"><a href="#"><i class="feather icon-filter"></i><span class="menu-title" data-i18n="User">{{__('dashboard.our works')}}</span></a>--}}
 {{--                <ul class="menu-content">--}}
 {{--                    <li class="{{Route::is('admin.works.index')? 'active':''}}"><a href="{{route('admin.works.index')}}"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">{{__('dashboard.our works')}}</span></a>--}}

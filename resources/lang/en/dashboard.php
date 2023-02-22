@@ -310,6 +310,7 @@ return [
      'media'=>'Media',
      'add media'=>'Add Media',
      'edit media'=>'Edit Media',
-     
+    'select icon' => 'Select Icon'
+
 
 ];

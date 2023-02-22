@@ -1,6 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\Group;
+use App\Models\Media;
+use App\Models\OurWork;
+use App\Models\Service;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -17,23 +21,15 @@ class HomeController extends Controller
 
     public function index()
     {
-
-        $authUser =auth()->user();
-        $users = User::where('type',0)
-            ->when($authUser->type != User::ADMIN,function ($q)use ($authUser){
-
-        })->get();
-
-//        $usersCount['LastMonth'] = $this->getUsersCountLatestMonths(1);
-//        $usersCount['LatestTowMonth'] = $this->getUsersCountLatestMonths(2);
-//        $usersCount['LatestThreeMonth'] = $this->getUsersCountLatestMonths(3);
-//        $usersCount['LatestFourMonth'] = $this->getUsersCountLatestMonths(4);
-
-
+        $services = Service::count();
+        $works = OurWork::count();
+        $media = Media::count();
+        $groups = Group::count();
         return view('dashboard.index',[
-
-            'users' => $users,
-//            'usersCountLatestFourMonth' => $usersCount,
+            'services' => $services,
+            'works' => $works,
+            'media' => $media,
+            'groups' => $groups,
         ]);
     }
 

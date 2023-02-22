@@ -14,7 +14,7 @@ use Yajra\DataTables\Facades\DataTables;
 class ServiceController extends Controller
 {
     use HelperTrait;
-    
+
     public function __construct()
     {
         $this->middleware('permission:services',['only'=>['index']]);
@@ -26,7 +26,7 @@ class ServiceController extends Controller
 
     public function index()
     {
-    
+
        if (\request()->ajax()) {
 
            $services= Service::get();
@@ -45,7 +45,7 @@ class ServiceController extends Controller
 
     public function store(ServiceRequest $request)
     {
-       
+
         $data = $request->except(['_token']);
 
         if($request->file('image')){
@@ -59,9 +59,9 @@ class ServiceController extends Controller
         }
 
         $service = Service::create($data);
-    
-        return back()->with(['success' => __('dashboard.item added successfully')]);
-        
+
+        return redirect()->route('admin.services.index')->with(['success' => __('dashboard.item added successfully')]);
+
     }
 
     public function show(Service $service)
@@ -72,14 +72,14 @@ class ServiceController extends Controller
 
     public function edit(Service $service)
     {
-       
+
         return view('dashboard.services.edit',['service'=>$service]);
 
     }
-  
+
     public function update(ServiceRequest $request, Service $service)
     {
-        
+
          $data = $request->except(['_token']);
 
          if ($request->hasFile('image')){

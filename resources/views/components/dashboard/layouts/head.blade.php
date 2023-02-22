@@ -7,7 +7,7 @@
     <meta name="author" content="PIXINVENT">
     <title>{{ $title }}</title>
     <link rel="apple-touch-icon" href="{{asset('dashboardAssets/app-assets/images/ico/apple-icon-120.png')}}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('dashboardAssets/app-assets/images/logo/R-LOGO.png')}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('dashboardAssets/app-assets/images/logo/N-FAVICON.png')}}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
     @if(app()->getLocale()=='ar')
         <!-- BEGIN: Vendor CSS-->
