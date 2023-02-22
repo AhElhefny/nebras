@@ -1,0 +1,354 @@
+@font-face {
+  font-family: 'ar-coder';
+  src:  url('fonts/ar-coder.eot?ulcr4h');
+  src:  url('fonts/ar-coder.eot?ulcr4h#iefix') format('embedded-opentype'),
+    url('fonts/ar-coder.ttf?ulcr4h') format('truetype'),
+    url('fonts/ar-coder.woff?ulcr4h') format('woff'),
+    url('fonts/ar-coder.svg?ulcr4h#ar-coder') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="ar-icons-"], [class*=" ar-icons-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ar-coder' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ar-icons-d:before {
+  content: "\e900";
+}
+.ar-icons-d-glasses:before {
+  content: "\e901";
+}
+.ar-icons-arrow-left:before {
+  content: "\e902";
+}
+.ar-icons-arrow-right:before {
+  content: "\e903";
+}
+.ar-icons-award-1:before {
+  content: "\e904";
+}
+.ar-icons-award-2:before {
+  content: "\e905";
+}
+.ar-icons-award:before {
+  content: "\e906";
+}
+.ar-icons-calendar:before {
+  content: "\e907";
+}
+.ar-icons-camera-1:before {
+  content: "\e908";
+}
+.ar-icons-camera:before {
+  content: "\e909";
+}
+.ar-icons-camera-lens:before {
+  content: "\e90a";
+}
+.ar-icons-cinema-1:before {
+  content: "\e90b";
+}
+.ar-icons-cinema:before {
+  content: "\e90c";
+}
+.ar-icons-cinema-screen:before {
+  content: "\e90d";
+}
+.ar-icons-cinema-seat:before {
+  content: "\e90e";
+}
+.ar-icons-clapperboard-1:before {
+  content: "\e90f";
+}
+.ar-icons-clapperboard:before {
+  content: "\e910";
+}
+.ar-icons-coffee:before {
+  content: "\e911";
+}
+.ar-icons-couch:before {
+  content: "\e912";
+}
+.ar-icons-director-chair-1:before {
+  content: "\e913";
+}
+.ar-icons-director-chair-2:before {
+  content: "\e914";
+}
+.ar-icons-director-chair:before {
+  content: "\e915";
+}
+.ar-icons-dvd:before {
+  content: "\e916";
+}
+.ar-icons-dvd-player-1:before {
+  content: "\e917";
+}
+.ar-icons-dvd-player:before {
+  content: "\e918";
+}
+.ar-icons-exit:before {
+  content: "\e919";
+}
+.ar-icons-film-camera-1:before {
+  content: "\e91a";
+}
+.ar-icons-film-camera:before {
+  content: "\e91b";
+}
+.ar-icons-film-director:before {
+  content: "\e91c";
+}
+.ar-icons-film-reel-1:before {
+  content: "\e91d";
+}
+.ar-icons-film-reel:before {
+  content: "\e91e";
+}
+.ar-icons-forward:before {
+  content: "\e91f";
+}
+.ar-icons-golden-globe:before {
+  content: "\e920";
+}
+.ar-icons-gopro:before {
+  content: "\e921";
+}
+.ar-icons-hd:before {
+  content: "\e922";
+}
+.ar-icons-headphones-1:before {
+  content: "\e923";
+}
+.ar-icons-headphones:before {
+  content: "\e924";
+}
+.ar-icons-hollywood-star:before {
+  content: "\e925";
+}
+.ar-icons-home-cinema-1:before {
+  content: "\e926";
+}
+.ar-icons-home-cinema:before {
+  content: "\e927";
+}
+.ar-icons-laptop-player:before {
+  content: "\e928";
+}
+.ar-icons-megaphone-1:before {
+  content: "\e929";
+}
+.ar-icons-megaphone:before {
+  content: "\e92a";
+}
+.ar-icons-menu:before {
+  content: "\e92b";
+}
+.ar-icons-microphone-1:before {
+  content: "\e92c";
+}
+.ar-icons-microphone-2:before {
+  content: "\e92d";
+}
+.ar-icons-microphone:before {
+  content: "\e92e";
+}
+.ar-icons-movie-1:before {
+  content: "\e92f";
+}
+.ar-icons-movie:before {
+  content: "\e930";
+}
+.ar-icons-movie-file:before {
+  content: "\e931";
+}
+.ar-icons-movie-film:before {
+  content: "\e932";
+}
+.ar-icons-movie-folder:before {
+  content: "\e933";
+}
+.ar-icons-movie-start:before {
+  content: "\e934";
+}
+.ar-icons-music-desk:before {
+  content: "\e935";
+}
+.ar-icons-no-smoking:before {
+  content: "\e936";
+}
+.ar-icons-old-tv:before {
+  content: "\e937";
+}
+.ar-icons-online-movie:before {
+  content: "\e938";
+}
+.ar-icons-oscar:before {
+  content: "\e939";
+}
+.ar-icons-pause:before {
+  content: "\e93a";
+}
+.ar-icons-pendrive:before {
+  content: "\e93b";
+}
+.ar-icons-perimeter:before {
+  content: "\e93c";
+}
+.ar-icons-photo-film:before {
+  content: "\e93d";
+}
+.ar-icons-play:before {
+  content: "\e93e";
+}
+.ar-icons-player-1:before {
+  content: "\e93f";
+}
+.ar-icons-player:before {
+  content: "\e940";
+}
+.ar-icons-plug:before {
+  content: "\e941";
+}
+.ar-icons-popcorn-1:before {
+  content: "\e942";
+}
+.ar-icons-popcorn-2:before {
+  content: "\e943";
+}
+.ar-icons-popcorn:before {
+  content: "\e944";
+}
+.ar-icons-projector-1:before {
+  content: "\e945";
+}
+.ar-icons-projector-2:before {
+  content: "\e946";
+}
+.ar-icons-projector:before {
+  content: "\e947";
+}
+.ar-icons-projector-screen:before {
+  content: "\e948";
+}
+.ar-icons-rate-movie:before {
+  content: "\e949";
+}
+.ar-icons-record:before {
+  content: "\e94a";
+}
+.ar-icons-red-carpet:before {
+  content: "\e94b";
+}
+.ar-icons-script-1:before {
+  content: "\e94c";
+}
+.ar-icons-script:before {
+  content: "\e94d";
+}
+.ar-icons-shutter:before {
+  content: "\e94e";
+}
+.ar-icons-smartphone:before {
+  content: "\e94f";
+}
+.ar-icons-soda:before {
+  content: "\e950";
+}
+.ar-icons-sofa:before {
+  content: "\e951";
+}
+.ar-icons-speaker:before {
+  content: "\e952";
+}
+.ar-icons-spotlight-1:before {
+  content: "\e953";
+}
+.ar-icons-spotlight-2:before {
+  content: "\e954";
+}
+.ar-icons-spotlight-3:before {
+  content: "\e955";
+}
+.ar-icons-spotlight-4:before {
+  content: "\e956";
+}
+.ar-icons-spotlight-5:before {
+  content: "\e957";
+}
+.ar-icons-spotlight:before {
+  content: "\e958";
+}
+.ar-icons-stage:before {
+  content: "\e959";
+}
+.ar-icons-stop:before {
+  content: "\e95a";
+}
+.ar-icons-storyboard:before {
+  content: "\e95b";
+}
+.ar-icons-stream:before {
+  content: "\e95c";
+}
+.ar-icons-super:before {
+  content: "\e95d";
+}
+.ar-icons-television-1:before {
+  content: "\e95e";
+}
+.ar-icons-television:before {
+  content: "\e95f";
+}
+.ar-icons-television-screen:before {
+  content: "\e960";
+}
+.ar-icons-theater:before {
+  content: "\e961";
+}
+.ar-icons-ticket-1:before {
+  content: "\e962";
+}
+.ar-icons-ticket:before {
+  content: "\e963";
+}
+.ar-icons-ticket-office:before {
+  content: "\e964";
+}
+.ar-icons-tickets:before {
+  content: "\e965";
+}
+.ar-icons-tripod:before {
+  content: "\e966";
+}
+.ar-icons-turn-on:before {
+  content: "\e967";
+}
+.ar-icons-tv-player:before {
+  content: "\e968";
+}
+.ar-icons-vhs:before {
+  content: "\e969";
+}
+.ar-icons-vip-pass:before {
+  content: "\e96a";
+}
+.ar-icons-vip-person:before {
+  content: "\e96b";
+}
+.ar-icons-wallet:before {
+  content: "\e96c";
+}
