@@ -305,6 +305,7 @@ return [
     'team list'=>'Team List',
     'start' => 'Let’s Start',
     'Discover More' => 'Discover More',
+    'amount'=>'Review Value',
     'table icon' => 'Icon',
     'table image2' => ' Image-2',
      'media'=>'Media',

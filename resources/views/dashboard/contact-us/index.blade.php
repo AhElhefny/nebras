@@ -30,7 +30,6 @@
                                                           <tr class="text text-center">
                                                                <th>{{__('dashboard.table name')}}</th>
                                                                <th>{{__('dashboard.table email')}}</th>
-                                                               <th>{{__('dashboard.table phone')}}</th>
                                                                <th>{{__('dashboard.feed back')}}</th>
                                                                <th>{{__('dashboard.table create date')}}</th>
                                                                <th>{{__('dashboard.actions')}}</th>
@@ -69,11 +68,10 @@
                         }
                     },
                     "paging": true,
-                    order : [[5,'desc']],
+                    order : [[4,'desc']],
                     columns: [
                         {data: 'name', name:'name'},
                         {data: 'email', name:'email'},
-                        {data: 'phone', name:'phone'},
                         {data: 'feedBack', name:'feedBack'},
                         {data: 'created_at',name: 'created_at'},
                         {data: 'id',

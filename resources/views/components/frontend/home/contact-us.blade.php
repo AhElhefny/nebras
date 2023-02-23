@@ -25,11 +25,7 @@
                                         <input type="email" name="email" placeholder="{{__('dashboard.table email')}}" id="email-contact" required="required">
                                     </div>
                                 </div>
-                                <div class="col-sm-12 mb-25">
-                                    <div class="contact__area-bottom-form-item">
-                                        <input type="text" name="phone" placeholder="{{__('dashboard.table phone')}}" id="phone-contact" required="required" minlength="9" maxlength="13">
-                                    </div>
-                                </div>
+                               
                                 <div class="col-sm-12 mb-25">
                                     <div class="contact__area-bottom-form-item">
                                         <input type="text" name="subject" placeholder="{{__('dashboard.subject')}}" id="subject-contact" required="required" minlength="5">
@@ -64,7 +60,6 @@
             e.preventDefault();
             let name = $('#name-contact').val();
             let email = $('#email-contact').val();
-            let phone = $('#phone-contact').val();
             let subject = $('#subject-contact').val();
             let feedBack = $('#subject-contact').val();
             $.ajax({
@@ -73,7 +68,6 @@
                 data:{
                     name:name,
                     email:email,
-                    phone:phone,
                     subject:subject,
                     feedBack:feedBack,
                     _token:"{{csrf_token()}}"
@@ -84,7 +78,7 @@
                             title: 'Success!',
                             text: response.success,
                             icon: 'success',
-                            confirmButtonText: 'Cool'
+                            confirmButtonText: 'OK'
                         });
                         $('#form-contact')[0].reset();
                     }

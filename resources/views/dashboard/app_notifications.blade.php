@@ -5,13 +5,13 @@
         <div class="content-wrapper">
             <div class="content-header row">
             </div>
-            <x-dashboard.layouts.breadcrumb now="{{__('dashboard.app notifications')}}">
-            </x-dashboard.layouts.breadcrumb>
-            <div class="content-body">
-                <section id="basic-horizontal-layouts">
-                    <div class="row match-height justify-content-center">
+              <x-dashboard.layouts.breadcrumb now="{{__('dashboard.app notifications')}}">
+              </x-dashboard.layouts.breadcrumb>
+             <div class="content-body">
+                 <section id="basic-horizontal-layouts">
+                     <div class="row match-height justify-content-center">
                         <div class="col-md-6 col-12">
-                            <div class="card">
+                             <div class="card">
                                 <div class="card-header  mb-5">
                                     <h4 class="card-title">{{__('dashboard.app notifications')}}</h4>
                                 </div>
@@ -20,8 +20,8 @@
                                 @endif
                                 <div class="card-content">
                                     <div class="card-body">
-                                        <form class="form form-horizontal" method="POST" action="{{route('admin.appNotifications.send')}}">
-                                            @csrf
+                                          <form class="form form-horizontal" method="POST" action="{{route('admin.appNotifications.send')}}">
+                                             @csrf
                                             <div class="form-body">
                                                 <div class="row">
                                                     <div class="col-12  mb-3">
@@ -81,11 +81,11 @@
                                                             <div class="col-md-4">
                                                                 <span>{{__('dashboard.send to')}}</span>
                                                             </div>
-                                                            <div class="col-md-8">
-                                                                <select id="send-to" class="select2 form-control " name="send_to">
-                                                                    <option value="0" selected>{{__('dashboard.all')}}</option>
-                                                                    <option value="1">{{__('dashboard.somebody')}}</option>
-                                                                </select>
+                                                             <div class="col-md-8">
+                                                                  <select id="send-to" class="select2 form-control " name="send_to">
+                                                                      <option value="0" selected>{{__('dashboard.all')}}</option>
+                                                                      <option value="1">{{__('dashboard.somebody')}}</option>
+                                                                 </select>
                                                             </div>
                                                             @error('send_to')
                                                             <span class="alert alert-danger">{{$message}}</span>
@@ -97,31 +97,31 @@
                                                             <div class="col-md-4">
                                                                 <span>{{__('dashboard.users')}}</span>
                                                             </div>
-                                                            <div class="col-md-8">
-                                                                <select id="users-select" class="select2 form-control" name="users_select[]" multiple>
+                                                             <div class="col-md-8">
+                                                                 <select id="users-select" class="select2 form-control" name="users_select[]" multiple>
 
-                                                                </select>
+                                                                 </select>
+                                                             </div>
+                                                                @error('users_select')
+                                                                 <span class="alert alert-danger">{{$message}}</span>
+                                                                @enderror
                                                             </div>
-                                                            @error('users_select')
-                                                            <span class="alert alert-danger">{{$message}}</span>
-                                                            @enderror
                                                         </div>
-                                                    </div>
-                                                    <div class="col-md-8 offset-md-4">
-                                                        <button type="submit" class="btn btn-primary mr-1 mb-1">{{__('dashboard.send')}}</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
+                                                         <div class="col-md-8 offset-md-4">
+                                                               <button type="submit" class="btn btn-primary mr-1 mb-1">{{__('dashboard.send')}}</button>
+                                                         </div>
+                                                      </div>
+                                                  </div>
+                                              </form>
+                                          </div>
+                                      </div>
+                                 </div>
+                              </div>
+                         </div>
+                     </section>
+                </div>
+           </div>
+      </div>
     @section('script')
         <script>
             $(document).ready(function () {

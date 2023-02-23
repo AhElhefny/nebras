@@ -15,14 +15,14 @@ class NebrasHomeController extends Controller
 
     public function index(){
 
-        $services = Service::take(4)->get();
-        $services_ids = Service::take(4)->pluck('id');
+        $services = Service::take(6)->get();
+        $services_ids = Service::take(6)->pluck('id');
         $servicesmore = Service::whereNotIn('id',$services_ids)->get();
         $groups = Group::where('active',1)->get();
         $teams =Team::take(4)->get();
         $works = OurWork::parents()->take(2)->get();
-        $mediacenters = Media::take(4)->get();
-        $media_ids =Media::take(4)->pluck('id');
+        $mediacenters = Media::take(6)->get();
+        $media_ids =Media::take(6)->pluck('id');
         $mediamore = Media::whereNotIn('id',$media_ids)->get();
         $websiteReviews = Review::whereNull('service_id')->get();
 
@@ -32,8 +32,8 @@ class NebrasHomeController extends Controller
 
     public function services(){
 
-        $services = Service::take(4)->get();
-        $services_ids = Service::take(4)->pluck('id');
+        $services = Service::take(6)->get();
+        $services_ids = Service::take(6)->pluck('id');
         $servicesmore = Service::whereNotIn('id',$services_ids)->get();
 
         return view('front.services',['services'=>$services ,'servicesmore'=>$servicesmore ]);
@@ -69,8 +69,8 @@ class NebrasHomeController extends Controller
     public function media(){
 
         $data=[];
-        $data['mediacenters'] = Media::take(4)->get();
-        $media_ids =Media::take(4)->pluck('id');
+        $data['mediacenters'] = Media::take(6)->get();
+        $media_ids =Media::take(6)->pluck('id');
         $data['mediamore'] = Media::whereNotIn('id',$media_ids)->get();
 
         return view('front.media',$data);

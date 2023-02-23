@@ -98,7 +98,7 @@
                                                  <div class="form-group">
                                                      <label for="contact-info-icon">{{__('dashboard.table description'). __('dashboard.in arabic')}}</label>
                                                       <div class="position-relative has-icon-left">
-                                                           <input type="text" id="contact-info-icon" class="form-control" name="description_ar" placeholder="{{__('dashboard.table description'). __('dashboard.in arabic')}}"/>
+                                                          <textarea  rows="5" id="contact-info-icon" class="form-control" name="description_ar" placeholder="{{__('dashboard.table description'). __('dashboard.in arabic')}}"></textarea>
                                                            <div class="form-control-position">
                                                                <i class="fa fa-pencil"></i>
                                                             </div>
@@ -113,7 +113,7 @@
                                                  <div class="form-group">
                                                     <label for="password-icon">{{__('dashboard.table description'). __('dashboard.in english')}}</label>
                                                     <div class="position-relative has-icon-left">
-                                                        <input type="text" id="password-icon" class="form-control" name="description_en" placeholder="{{__('dashboard.table description'). __('dashboard.in english')}}">
+                                                        <textarea  rows="5" id="password-icon" class="form-control" name="description_en" placeholder="{{__('dashboard.table description'). __('dashboard.in english')}}"></textarea>
                                                           <div class="form-control-position">
                                                                <i class="fa fa-pencil"></i>
                                                           </div>

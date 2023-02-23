@@ -13,16 +13,16 @@
                         <div class="services__details-left-image mb-60">
                             <div class="row mt-30">
                                 <div class="col-sm-6 sm-mb-30">
-                                    <a class="portfolio__area-two-item" href="{{asset($service->image)}}"
-                                       title="Medical Scanner 04" data-subtitle="Medical Scanner">
+                                    <a class="portfolio__area-two-item" href="{{asset($service->image)}}">
+                                       
                                         <img class="img__full" src="{{asset($service->image)}}" alt="">
                                     </a>
                                 </div>
 
                                 @if(isset($service->image2))
                                     <div class="col-sm-6 sm-mb-30">
-                                        <a class="portfolio__area-two-item" href="{{asset($service->image2)}}"
-                                           title="Medical Scanner 04" data-subtitle="Medical Scanner">
+                                        <a class="portfolio__area-two-item" href="{{asset($service->image2)}}">
+                                        
                                             <img class="img__full" src="{{asset($service->image2)}}" style="width:416px; height: 416px " alt="">
                                         </a>
                                     </div>
@@ -65,10 +65,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
+                                     @endforeach
+                                </div>
+                           </div>
+                      </div>
                 </div>
                 <div class="col-xl-4 col-lg-4">
                     <div class="all__sidebar ml-25 xl-ml-0">

@@ -81,14 +81,14 @@
                                             </div>
 
                                             <div class="col-12">
-                                                <div class="form-group">
-                                                    <label for="first-name-icon">{{__('dashboard.table job').__('dashboard.in arabic')}}</label>
-                                                    <div class="position-relative has-icon-left">
-                                                        <input type="text" id="first-name-icon" class="form-control" name="job_ar" value="{{old('job_ar',$team->job_ar)}}"  placeholder="{{__('dashboard.table job').__('dashboard.in arabic')}}">
-                                                        <div class="form-control-position">
-                                                            <i class="feather icon-grid"></i>
-                                                        </div>
-                                                    </div>
+                                                 <div class="form-group">
+                                                     <label for="first-name-icon">{{__('dashboard.table job').__('dashboard.in arabic')}}</label>
+                                                       <div class="position-relative has-icon-left">
+                                                           <input type="text" id="first-name-icon" class="form-control" name="job_ar" value="{{old('job_ar',$team->job_ar)}}"  placeholder="{{__('dashboard.table job').__('dashboard.in arabic')}}">
+                                                            <div class="form-control-position">
+                                                                <i class="feather icon-grid"></i>
+                                                           </div>
+                                                     </div>
                                                      @error('job_ar')
                                                        <span class="text text-danger">{{$message}}</span>
                                                      @enderror
@@ -99,79 +99,79 @@
                                               <div class="form-group">
                                                   <label for="contact-info-icon">{{__('dashboard.table description'). __('dashboard.in arabic')}}</label>
                                                     <div class="position-relative has-icon-left">
-                                                        <input type="text" id="contact-info-icon" class="form-control" value="{{old('description_ar',$team->description_ar)}}" name="description_ar" placeholder="{{__('dashboard.table description'). __('dashboard.in arabic')}}"/>
+                                                        <textarea rows="5" id="contact-info-icon" class="form-control" name="description_ar" placeholder="{{__('dashboard.table description'). __('dashboard.in arabic')}}">{{old('description_ar',$team->description_ar)}}</textarea>
                                                          <div class="form-control-position">
                                                              <i class="fa fa-pencil"></i>
                                                         </div>
                                                    </div>
                                                      @error('description_ar')
                                                       <span class="text text-danger">{{$message}}</span>
-                                                   @enderror
+                                                     @enderror
                                                </div>
-                                        </div>
+                                          </div>
 
-                                         <div class="col-12">
-                                              <div class="form-group">
-                                                  <label for="password-icon">{{__('dashboard.table description'). __('dashboard.in english')}}</label>
-                                                     <div class="position-relative has-icon-left">
-                                                        <input type="text" id="password-icon" class="form-control" value="{{old('description_en',$team->description_en)}}" name="description_en" placeholder="{{__('dashboard.table description'). __('dashboard.in english')}}">
-                                                          <div class="form-control-position">
-                                                             <i class="fa fa-pencil"></i>
-                                                        </div>
-                                                    </div>
-                                                      @error('description_en')
-                                                        <span class="text text-danger">{{$message}}</span>
-                                                      @enderror
-                                                     </div>
-                                              </div>
-
-                                              <div class="col-12">
-                                                  <div class="form-group">
-                                                       <label for="first-name-icon">{{__('dashboard.twitter link')}}</label>
-                                                         <div class="position-relative has-icon-left">
-                                                           <input type="url" id="first-name-icon" class="form-control" name="twitter" value="{{old('twitter',$team->twitter)}}" placeholder="{{__('dashboard.twitter link')}}">
-                                                             <div class="form-control-position">
-                                                                   <i class="feather icon-grid"></i>
-                                                             </div>
+                                           <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="password-icon">{{__('dashboard.table description'). __('dashboard.in english')}}</label>
+                                                       <div class="position-relative has-icon-left">
+                                                           <textarea rows="5" id="password-icon" class="form-control"  name="description_en" placeholder="{{__('dashboard.table description'). __('dashboard.in english')}}">{{old('description_en',$team->description_en)}}</textarea>
+                                                            <div class="form-control-position">
+                                                               <i class="fa fa-pencil"></i>
+                                                           </div>
                                                        </div>
-                                                   </div>
-                                             </div>
-
-                                                <div class="col-12">
-                                                    <div class="form-group">
-                                                        <label for="first-name-icon">{{__('dashboard.website link')}}</label>
-                                                         <div class="position-relative has-icon-left">
-                                                               <input type="url" id="first-name-icon" class="form-control" name="website"  value="{{old('website',$team->website)}}"  placeholder="{{__('dashboard.website link')}}">
-                                                                <div class="form-control-position">
-                                                                    <i class="feather icon-grid"></i>
-                                                                </div>
-                                                          </div>
+                                                         @error('description_en')
+                                                          <span class="text text-danger">{{$message}}</span>
+                                                        @enderror
                                                       </div>
                                                 </div>
 
+                                                 <div class="col-12">
+                                                      <div class="form-group">
+                                                          <label for="first-name-icon">{{__('dashboard.twitter link')}}</label>
+                                                           <div class="position-relative has-icon-left">
+                                                               <input type="url" id="first-name-icon" class="form-control" name="twitter" value="{{old('twitter',$team->twitter)}}" placeholder="{{__('dashboard.twitter link')}}">
+                                                                 <div class="form-control-position">
+                                                                    <i class="feather icon-grid"></i>
+                                                               </div>
+                                                         </div>
+                                                    </div>
+                                               </div>
+
                                                 <div class="col-12">
-                                                   <div class="form-group">
-                                                       <label for="first-name-icon">{{__('dashboard.behance link')}}</label>
-                                                          <div class="position-relative has-icon-left">
-                                                              <input type="url" id="first-name-icon" class="form-control" name="behance" value="{{old('behance',$team->behance)}}" placeholder="{{__('dashboard.behance link')}}">
-                                                                <div class="form-control-position">
-                                                                     <i class="feather icon-grid"></i>
+                                                    <div class="form-group">
+                                                          <label for="first-name-icon">{{__('dashboard.website link')}}</label>
+                                                           <div class="position-relative has-icon-left">
+                                                               <input type="url" id="first-name-icon" class="form-control" name="website"  value="{{old('website',$team->website)}}"  placeholder="{{__('dashboard.website link')}}">
+                                                                  <div class="form-control-position">
+                                                                      <i class="feather icon-grid"></i>
+                                                                 </div>
+                                                           </div>
+                                                       </div>
+                                                 </div>
+
+                                                  <div class="col-12">
+                                                       <div class="form-group">
+                                                           <label for="first-name-icon">{{__('dashboard.behance link')}}</label>
+                                                             <div class="position-relative has-icon-left">
+                                                                  <input type="url" id="first-name-icon" class="form-control" name="behance" value="{{old('behance',$team->behance)}}" placeholder="{{__('dashboard.behance link')}}">
+                                                                   <div class="form-control-position">
+                                                                        <i class="feather icon-grid"></i>
+                                                                   </div>
                                                               </div>
                                                         </div>
-                                                   </div>
-                                             </div>
+                                                  </div>
 
-                                             <div class="col-12">
-                                                     <button type="submit" class="btn btn-primary mr-1 mb-1">{{__('dashboard.submit')}}</button>
-                                             </div>
-                                          </div>
-                                     </div>
-                                 </form>
+                                                    <div class="col-12">
+                                                          <button type="submit" class="btn btn-primary mr-1 mb-1">{{__('dashboard.submit')}}</button>
+                                                     </div>
+                                               </div>
+                                           </div>
+                                      </form>
+                                  </div>
                              </div>
-                         </div>
-                    </div>
-               </div>
-          </div>
-    </div>
+                        </div>
+                  </div>
+              </div>
+      </div>
 
 </x-dashboard.layouts.master>
