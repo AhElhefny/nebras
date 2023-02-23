@@ -311,7 +311,8 @@ return [
      'media'=>'Media',
      'add media'=>'Add Media',
      'edit media'=>'Edit Media',
-    'select icon' => 'Select Icon'
+    'select icon' => 'Select Icon',
+    'manage slider' => 'Manage Slider',
 
 
 ];
