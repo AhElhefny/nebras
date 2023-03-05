@@ -76,6 +76,15 @@ class MediaController extends Controller
     public function update(Request $request, Media $media)
     {
 
+        $rules = [
+            'name_ar' => ['required','min:5'],
+            'name_en' => ['required','min:100'],
+        ];
+
+        $validator = Validator::make($request->all(),$rules);
+        if($validator->fails()){
+            return back()->withInput()->withErrors($validator->errors());
+        }
         $data = $request->except(['_token']);
 
         if ($request->hasFile('image')){
