@@ -9,7 +9,7 @@ trait DefaultModelAttributesTrait
 
     public function getImageAttribute($value){
 
-        return $valus?asset('dashboardAssets/images/'.$this->folder.'/'.$value):null;
+        return $value?asset('dashboardAssets/images/'.$this->folder.'/'.$value):null;
     }
 
     public function getCreatedAtAttribute($value)
