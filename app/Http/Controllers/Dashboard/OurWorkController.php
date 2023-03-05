@@ -71,7 +71,7 @@ class OurWorkController extends Controller
         }
         $rules = [
             'image' => ['nullable','image'],
-            'parent' => ['nullable',Rule::exists('our_work','id')],
+            'parent' => ['nullable',Rule::exists('our_works','id')],
             'title_ar' => ['required','string','min:5'],
             'title_en' => ['required','string','min:5'],
         ];

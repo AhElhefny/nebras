@@ -16,7 +16,7 @@ class MediaController extends Controller
 
     public function index()
     {
-        
+
         if (\request()->ajax()){
 
             $media = Media::all();
@@ -36,7 +36,15 @@ class MediaController extends Controller
 
     public function store(Request $request)
     {
-    
+
+        $rules = [
+            'image' => ['required','image']
+        ];
+
+        $validator = Validator::make($request->all(),$rules);
+        if($validator->fails()){
+            return back()->withInput()->withErrors($validator->errors());
+        }
         $data = $request->except(['_token']);
 
         if($request->file('image')){
@@ -50,7 +58,7 @@ class MediaController extends Controller
 
     }
 
-   
+
     public function show($id)
     {
         //
@@ -58,7 +66,7 @@ class MediaController extends Controller
 
     public function edit($id)
     {
-       
+
         $data= Media::find($id);
 
         return view('dashboard.media.edit',compact('data'));
@@ -67,7 +75,7 @@ class MediaController extends Controller
 
     public function update(Request $request, Media $media)
     {
-        
+
         $data = $request->except(['_token']);
 
         if ($request->hasFile('image')){
@@ -82,11 +90,11 @@ class MediaController extends Controller
 
     public function destroy(Media $media)
     {
-        
+
         $media->delete();
 
         return back()->with(['success'=>__('dashboard.item deleted successfully')]);
     }
 
-  
+
 }

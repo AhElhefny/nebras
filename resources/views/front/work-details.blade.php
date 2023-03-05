@@ -7,7 +7,7 @@
                         @if($index < 2)
                         <div class="col-xl-6 col-md-6 mb-30 portfolio-item">
                             <a class="portfolio__area-two-item" href="{{$work->image}}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
-                                <img class="img__full" src="{{$work->image}}" alt="" style="width: 545px;height: 636px">
+                                <img class="img__full" src="{{$work->image}}" alt="" style="height: 636px">
                                 <div class="portfolio__area-two-item-content">
                                     <h4>{{$work->title_en}}</h4>
                                 </div>
@@ -25,11 +25,13 @@
                         @endif
                     @endforeach
 
+                    @if($count > 5)
                     <div class="col-xl-12 t-center">
                         <button class="theme-btn-1 open-see-more" id="all-works-btn">
                             {{__('dashboard.All Works')}}<i class="fal fa-long-arrow-right"></i>
                         </button>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>

@@ -163,7 +163,7 @@
                                     return  `<img width="100" height="80" src="${data}">`
                                 }},
                             {data: 'parent', render:function (data) {
-                                    return data[0]
+                                return Array.isArray(data)?data[0]:data
                                 }},
                             {data: 'created_at', name:'created_at'},
                             {data: 'id',

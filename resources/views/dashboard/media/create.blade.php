@@ -23,7 +23,7 @@
                                                   <div class="form-group">
                                                        <label for="email-id-icon">{{__('dashboard.table image')}}</label>
                                                          <div class="position-relative has-icon-left">
-                                                            <input type="file" id="email-id-icon" class="form-control" name="image">
+                                                            <input type="file" id="email-id-icon" class="form-control" name="image" required>
                                                             <div class="form-control-position">
                                                                  <i class="feather icon-image"></i>
                                                             </div>
@@ -64,7 +64,7 @@
                                                        </div>
                                                    </div>
 
-                                  
+
                                                   <div class="col-12">
                                                       <button type="submit" class="btn btn-primary mr-1 mb-1">{{__('dashboard.submit')}}</button>
                                                       <button type="reset" class="btn btn-outline-warning mr-1 mb-1">{{__('dashboard.reset')}}</button>

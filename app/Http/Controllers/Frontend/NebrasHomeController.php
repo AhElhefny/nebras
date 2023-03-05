@@ -86,12 +86,12 @@ class NebrasHomeController extends Controller
         if(!OurWork::find($id)){
             return redirect()->route('/')->with(['success'=>__('dashboard.something went wrong')]);
         }
-        $works = OurWork::where('parent',$id)->take(5)->get();
+        $works = OurWork::where('parent',$id)->get();
         if(\request('all')){
             $works = OurWork::where('parent',$id)->get();
             return response()->json($works);
         }
-        return view('front.work-details',['works' => $works,'id' => $id]);
+        return view('front.work-details',['works' => $works->take(5),'id' => $id,'count' => $works->count()]);
     }
 
     public function group(){

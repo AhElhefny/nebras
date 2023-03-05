@@ -12,17 +12,18 @@
                         </div>
                         <div class="services__details-left-image mb-60">
                             <div class="row mt-30">
+                                @if(isset($service->image))
                                 <div class="col-sm-6 sm-mb-30">
                                     <a class="portfolio__area-two-item" href="{{asset($service->image)}}">
-                                       
-                                        <img class="img__full" src="{{asset($service->image)}}" alt="">
+
+                                        <img class="img__full" src="{{asset($service->image)}}" style="width:416px; height: 416px " alt="">
                                     </a>
                                 </div>
-
+                                @endif
                                 @if(isset($service->image2))
                                     <div class="col-sm-6 sm-mb-30">
                                         <a class="portfolio__area-two-item" href="{{asset($service->image2)}}">
-                                        
+
                                             <img class="img__full" src="{{asset($service->image2)}}" style="width:416px; height: 416px " alt="">
                                         </a>
                                     </div>

@@ -16,7 +16,7 @@
                                         <img class="img__full" src="{{asset($team->image)}}" alt="">
                                     </a>
                                 </div>
-                                <div class="col-sm-6 mb-30">
+                                {{-- <div class="col-sm-6 mb-30">
                                    <a class="portfolio__area-two-item" href="{{asset($team->image)}}" title="David Beckham" data-subtitle="Research for your next design project is done by a team of industry experts. We help with research, data analysis, and visualization. Our expertise covers many different fields including UX Design, Brand Strategy, Content Writing, User Experience Design and more.">
                                        <img class="img__full" src="{{asset($team->image)}}" alt="">
                                    </a>
@@ -25,7 +25,7 @@
                                     <a class="portfolio__area-two-item" href="{{asset($team->image)}}" title="David Beckham" data-subtitle="Research for your next design project is done by a team of industry experts. We help with research, data analysis, and visualization. Our expertise covers many different fields including UX Design, Brand Strategy, Content Writing, User Experience Design and more.">
                                         <img class="img__full" src="{{asset($team->image)}}" alt="">
                                     </a>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>

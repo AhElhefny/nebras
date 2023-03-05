@@ -9,7 +9,7 @@ trait DefaultModelAttributesTrait
 
     public function getImageAttribute($value){
 
-        return asset('dashboardAssets/images/'.$this->folder.'/'.$value);
+        return $valus?asset('dashboardAssets/images/'.$this->folder.'/'.$value):null;
     }
 
     public function getCreatedAtAttribute($value)
@@ -33,7 +33,7 @@ trait DefaultModelAttributesTrait
 
             return $this->description_ar;
         }
-        
+
         return $this->description_en;
     }
 
@@ -43,7 +43,7 @@ trait DefaultModelAttributesTrait
 
             return $this->job_ar;
         }
-        
+
          return $this->job_en;
     }
 }

@@ -267,7 +267,7 @@
                      @foreach($works as $work)
                         <div class="col-lg-6 ">
                             <div class="features__area-item features__area-item-hover">
-                                <img src="{{$work->image}}" alt="" style="width: 545px;height: 636px">
+                                <img src="{{$work->image}}" alt="" style="height: 636px">
                                 <div class="features__area-item-content">
                                     <div class="features__area-item-content-icon">
                                         <a href="{{route('front.works.show',$work->id)}}"><i class="fal fa-plus"></i></a>

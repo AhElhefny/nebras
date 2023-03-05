@@ -13,7 +13,7 @@
                     <div class="card-header">
                         <h4 class="card-title">{{__('dashboard.edit media')}}</h4>
                     </div>
-                    
+
                     <div class="card-content">
                           <div class="card-body">
                               <form class="form form-vertical" method="POST" action="{{route('admin.media.update',$data->id)}}" enctype="multipart/form-data">
@@ -35,12 +35,12 @@
                                                       @enderror
                                                 </div>
                                           </div>
- 
+
                                            <div class="col-12">
                                                <div class="form-group">
                                                    <label for="first-name-icon">{{__('dashboard.table name').__('dashboard.in arabic')}}</label>
                                                       <div class="position-relative has-icon-left">
-                                                          <input type="text" id="first-name-icon" value="{{old('name_ar',$data->name_ar)}}" class="form-control" name="name_ar" placeholder="{{__('dashboard.table name').__('dashboard.in arabic')}}">
+                                                          <input type="text" id="first-name-icon" value="{{old('name_ar',$data->name_ar)}}" class="form-control" name="name_ar" placeholder="{{__('dashboard.table name').__('dashboard.in arabic')}}" required>
                                                              <div class="form-control-position">
                                                                 <i class="feather icon-grid"></i>
                                                             </div>
@@ -55,7 +55,7 @@
                                                   <div class="form-group">
                                                        <label for="first-name-icon">{{__('dashboard.table name').__('dashboard.in english')}}</label>
                                                         <div class="position-relative has-icon-left">
-                                                            <input type="text" id="first-name-icon" class="form-control" value="{{old('name_en',$data->name_en)}}" name="name_en" placeholder="{{__('dashboard.table name').__('dashboard.in english')}}">
+                                                            <input type="text" id="first-name-icon" class="form-control" value="{{old('name_en',$data->name_en)}}" name="name_en" placeholder="{{__('dashboard.table name').__('dashboard.in english')}}" required>
                                                               <div class="form-control-position">
                                                                  <i class="feather icon-grid"></i>
                                                              </div>
