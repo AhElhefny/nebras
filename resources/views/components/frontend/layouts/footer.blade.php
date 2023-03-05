@@ -39,7 +39,7 @@
         <div class="row align-items-center copyright__area-border">
             <div class="col-xl-12">
                 <div class="copyright__area-left t-center">
-                    <p>Copyright &amp; 2023<a href="https://badee.com.sa/"> Badee</a> Website by Nebras Films </p>
+                    {!! GeneralSetting::getValueForKey('copyright') !!}
                 </div>
             </div>
         </div>
