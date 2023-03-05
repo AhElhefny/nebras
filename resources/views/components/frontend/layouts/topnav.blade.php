@@ -38,7 +38,7 @@
                 </div>
                 <div class="header__area-box-contact">
                     <div class="header__area-box-contact-icon">
-                        <i class="fal fa-phone-alt"></i>
+                        <a href="tel:+{{GeneralSetting::getValueForKey('contact_number')}}"><i class="fal fa-phone-alt"></i></a>
                     </div>
                     <div class="header__area-box-contact-content">
                         <span>{{__('dashboard.Quick Help')}}</span>
