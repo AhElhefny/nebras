@@ -9,7 +9,7 @@
                             <a class="portfolio__area-two-item" href="{{$work->image}}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
                                 <img class="img__full" src="{{$work->image}}" alt="" style="height: 636px">
                                 <div class="portfolio__area-two-item-content">
-                                    <h4>{{$work->title_en}}</h4>
+                                    <h4>{{$work->title}}</h4>
                                 </div>
                             </a>
                         </div>
@@ -18,7 +18,7 @@
                                 <a class="portfolio__area-two-item" href="{{$work->image}}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
                                     <img class="img__full" src="{{$work->image}}" alt="" style="height: 416px">
                                     <div class="portfolio__area-two-item-content">
-                                        <h4>{{$work->title_en}}</h4>
+                                        <h4>{{$work->title}}</h4>
                                     </div>
                                 </a>
                             </div>
@@ -55,7 +55,7 @@
                                         <a class="portfolio__area-two-item" href="${response[i].image}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
                                         <img class="img__full" src="${response[i].image}" alt="" style="width: 545px;height: 636px">
                                         <div class="portfolio__area-two-item-content">
-                                        <h4>${response[i].title_en}</h4>
+                                        <h4>${response[i].title}</h4>
                                         </div>
                                         </a>
                                         </div>`);
@@ -64,7 +64,7 @@
                                         <a class="portfolio__area-two-item" href="${response[i].image}" title="Medical Scanner 04" data-subtitle="Medical Scanner">
                                         <img class="img__full" src="${response[i].image}" alt="" style="height: 416px">
                                         <div class="portfolio__area-two-item-content">
-                                        <h4>${response[i].title_en}</h4>
+                                        <h4>${response[i].title}</h4>
                                         </div>
                                         </a>
                                         </div>`);

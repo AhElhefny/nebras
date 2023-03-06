@@ -313,6 +313,7 @@ return [
      'edit media'=>'Edit Media',
     'select icon' => 'Select Icon',
     'manage slider' => 'Manage Slider',
+    'edit personal information' => 'Edit Personal Information',
 
 
 ];

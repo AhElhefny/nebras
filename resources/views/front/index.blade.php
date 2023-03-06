@@ -136,10 +136,10 @@
                             <div class="services__area-item-content">
                                 <h4>
                                     <a
-                                        href="{{ route('front.services.show', $service->id) }}">{{ $service->name_en }}</a>
+                                        href="{{ route('front.services.show', $service->id) }}">{{ $service->name }}</a>
                                 </h4>
                                 <p>
-                                    {{ $service->description_en }}
+                                    {{ $service->description }}
                                 </p>
                             </div>
                         </div>
@@ -155,10 +155,10 @@
                             </div>
                             <div class="services__area-item-content">
                                 <h4><a
-                                        href="{{ route('front.services.show', $service->id) }}">{{ $service->name_en }}</a>
+                                        href="{{ route('front.services.show', $service->id) }}">{{ $service->name }}</a>
                                 </h4>
                                 <p>
-                                    {{ $service->description_en }}
+                                    {{ $service->description }}
                                 </p>
                             </div>
                         </div>
@@ -301,7 +301,7 @@
                                     <a href="{{ route('front.works.show', $work->id) }}"><i
                                             class="fal fa-plus"></i></a>
                                 </div>
-                                <h3><a href="{{ route('front.works.show', $work->id) }}">{{ $work->title_en }}</a>
+                                <h3><a href="{{ route('front.works.show', $work->id) }}">{{ $work->title }}</a>
                                 </h3>
                             </div>
                         </div>

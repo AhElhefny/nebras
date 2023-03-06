@@ -21,10 +21,10 @@
                               </div>
                              <div class="services__area-item-content">
                                 <h4>
-                                    <a href="{{route('front.services.show',$service->id)}}">{{$service->name_en}}</a>
+                                    <a href="{{route('front.services.show',$service->id)}}">{{$service->name}}</a>
                                 </h4>
                                    <p>
-                                       {{$service->description_en}}
+                                       {{$service->description}}
                                   </p>
                               </div>
                          </div>
@@ -38,9 +38,9 @@
                                 <i class="ar-icons-{{$service->icon}}"></i>
                             </div>
                               <div class="services__area-item-content">
-                                <h4><a href="{{route('front.services.show',$service->id)}}">{{$service->name_en}}</a></h4>
+                                <h4><a href="{{route('front.services.show',$service->id)}}">{{$service->name}}</a></h4>
                                 <p>
-                                    {{$service->description_en}}
+                                    {{$service->description}}
                                 </p>
                             </div>
                         </div>
