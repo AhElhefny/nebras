@@ -39,7 +39,7 @@
         <div class="row align-items-center copyright__area-border">
             <div class="col-xl-12">
                 <div class="copyright__area-left t-center">
-                    {!! GeneralSetting::getValueForKey('copyright') !!}
+                    <p><strong>Copyright</strong> © 2023 Nebras Films. Developed With Love By<a href="https://badee.com.sa/" target="_blank"> Badee</a> </p>
                 </div>
             </div>
         </div>
