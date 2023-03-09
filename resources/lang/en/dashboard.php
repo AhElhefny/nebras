@@ -38,7 +38,7 @@ return [
     'table address' => 'Address' ,
     'table create date' => 'Create date',
     'table job'=>'Job',
-    'login' => 'Login',
+    'login' => 'Log in',
     'in arabic' => ' in Arabic',
     'in english' => ' in English',
     'submit' => 'Save',
@@ -314,6 +314,7 @@ return [
     'select icon' => 'Select Icon',
     'manage slider' => 'Manage Slider',
     'edit personal information' => 'Edit Personal Information',
+    
 
 
 ];
