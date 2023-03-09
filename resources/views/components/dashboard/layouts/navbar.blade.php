@@ -20,7 +20,7 @@
                 </div>
                 <ul class="nav navbar-nav float-right">
 
-                    <x-notifications />
+                    {{-- <x-notifications /> --}}
                     <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                             <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">{{auth('web')->user()->name}}</span><span class="user-status">{{app()->getLocale() =='ar'? auth('web')->user()->type_ar :auth('web')->user()->type_en}}</span></div><span><img class="round" src="{{auth()->user()->image}}" alt="avatar" height="40" width="40"></span>
                         </a>
